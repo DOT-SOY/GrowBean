@@ -1,0 +1,103 @@
+﻿action,actionMessage,resultSuccess,resultFail,successRate,successChanges,failChanges
+eat,{name}이(가) 귀찮게 밥을 먹기 시작했다.,{name}은(는) 겨우 밥을 다 먹었다.,{name}은(는) 먹다 말고 잠들었다.,0.6,HUNGER:-20~-10|HAPPY:+5~+10,HUNGER:-5~-2|STRESS:+3~+8
+eat,{name}이(가) 대충 반찬만 골라먹는다.,{name}은(는) 배를 채웠지만 여전히 무기력하다.,{name}은(는) 한 입 먹고 식탁에 엎드렸다.,0.7,HUNGER:-15~-8|MOTIVATION:+3~+5,HUNGER:-3~-1|STRESS:+4~+7
+eat,{name}이(가) 천천히 숟가락을 든다.,{name}은(는) 조금은 기운이 난 듯하다.,{name}은(는) 밥을 남겼다.,0.5,HUNGER:-10~-7|HAPPY:+4~+8,HUNGER:-3~-1|MOTIVATION:-5~-2
+eat,{name}이(가) 한참을 고민하다 밥을 먹기 시작했다.,{name}은(는) 식사 후 잠시 만족감을 느꼈다.,{name}은(는) 밥을 먹다 말고 한숨을 쉰다.,0.6,HUNGER:-18~-10|HAPPY:+3~+7,HUNGER:-4~-2|STRESS:+2~+5
+eat,{name}이(가) 억지로 밥을 먹는다.,{name}은(는) 기분은 별로지만 배는 찼다.,{name}은(는) 너무 귀찮아서 반쯤 남겼다.,0.7,HUNGER:-20~-15|HAPPY:+2~+6,HUNGER:-5~-3|MOTIVATION:-8~-5
+eat,{name}이(가) 먹기 싫지만 뭐라도 씹는다.,{name}은(는) 겨우 삼켰다.,{name}은(는) 그냥 눕는다.,0.5,HUNGER:-10~-6|STRESS:-5~-2,HUNGER:-3~-1|HAPPY:-5~-2
+eat,{name}이(가) 밥을 데워온다.,{name}은(는) 밥을 다 먹고 기분이 조금 나아졌다.,{name}은(는) 밥 냄새만 맡고 포기했다.,0.6,HUNGER:-20~-10|HAPPY:+5~+10,HUNGER:-5~-3|STRESS:+4~+8
+eat,{name}이(가) 남은 밥으로 주먹밥을 만든다.,{name}은(는) 맛있게 먹었다.,{name}은(는) 주먹밥을 굴리다 말았다.,0.7,HUNGER:-15~-10|HAPPY:+8~+12,HUNGER:-5~-2|MOTIVATION:-5~-2
+eat,{name}이(가) 간단히 빵으로 끼니를 때운다.,{name}은(는) 배를 채우고 느릿하게 누웠다.,{name}은(는) 빵 부스러기만 남겼다.,0.5,HUNGER:-15~-10|HAPPY:+3~+6,HUNGER:-4~-2|STRESS:+2~+4
+eat,{name}이(가) 먹을까 말까 고민한다.,{name}은(는) 조금이라도 먹어서 다행이다.,{name}은(는) 그냥 굶기로 했다.,0.6,HUNGER:-8~-5|HAPPY:+2~+4,HUNGER:-2~-1|MOTIVATION:-10~-5
+,,,,,,
+rest,{name}이(가) 느릿하게 누워서 쉰다.,{name}은(는) 잠깐이나마 여유를 찾았다.,{name}은(는) 너무 게을러서 오히려 더 피곤해졌다.,0.5,HAPPY:+10~+15|STRESS:-8~-4|MOTIVATION:+5~+10,HAPPY:-5~-1|STRESS:+5~+8
+rest,{name}이(가) 침대에 파묻힌다.,{name}은(는) 잠깐 낮잠을 잤다.,{name}은(는) 더 이상 움직이지 않는다.,0.6,HAPPY:+5~+8|STRESS:-10~-6|HUNGER:+3~+5,HAPPY:-3~-1|MOTIVATION:-5~-2
+rest,{name}이(가) TV를 켜둔 채 누워있다.,{name}은(는) 마음이 조금 편해졌다.,{name}은(는) 아무것도 하지 않았다.,0.7,STRESS:-10~-5|HAPPY:+3~+7,STRESS:+2~+4|MOTIVATION:-3~-1
+rest,{name}이(가) 이불 속으로 들어간다.,{name}은(는) 푹 쉬었다.,{name}은(는) 뒤척이다가 결국 잠을 못 잤다.,0.5,HAPPY:+5~+8|STRESS:-8~-3|MOTIVATION:+5~+8,HAPPY:-3~-1|STRESS:+3~+6
+rest,{name}이(가) 잠시 눈을 붙인다.,{name}은(는) 기분이 한결 나아졌다.,{name}은(는) 꿈속에서도 피곤했다.,0.6,HAPPY:+7~+10|STRESS:-7~-3,HAPPY:-4~-2|STRESS:+5~+8
+rest,{name}이(가) 침대에 누워 천장을 바라본다.,{name}은(는) 생각이 정리된 듯하다.,{name}은(는) 머릿속이 더 복잡해졌다.,0.7,HAPPY:+5~+10|STRESS:-5~-2,HAPPY:-3~-1|STRESS:+4~+7
+rest,{name}이(가) 폰을 보며 쉰다.,{name}은(는) 조금은 안정된 기분이 든다.,{name}은(는) 더 피곤해졌다.,0.5,HAPPY:+3~+5|STRESS:-6~-3,HAPPY:-3~-1|STRESS:+6~+9
+rest,{name}이(가) 소파에 눕는다.,{name}은(는) 잠깐이라도 쉼을 얻었다.,{name}은(는) 허리가 아파졌다.,0.6,HAPPY:+4~+7|STRESS:-8~-3,HAPPY:-2~-1|STRESS:+4~+6
+rest,{name}이(가) 커튼을 치고 방 안을 어둡게 만든다.,{name}은(는) 마음이 한결 차분해졌다.,{name}은(는) 어둠 속에서 아무 생각이 없다.,0.7,HAPPY:+6~+9|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-5~-2
+rest,{name}이(가) 느릿느릿 스트레칭을 한다.,{name}은(는) 피로가 조금 풀렸다.,{name}은(는) 하다 말고 그만뒀다.,0.5,STRESS:-10~-6|HAPPY:+5~+8,MOTIVATION:-5~-2|STRESS:+3~+6
+,,,,,,
+play,{name}이(가) 게임을 켰다.,{name}은(는) 즐거웠다!,{name}은(는) 게임 중 잠들었다.,0.7,HAPPY:+10~+15|STRESS:-5~-2|MOTIVATION:+5~+8,HAPPY:-5~-2|MOTIVATION:-8~-5
+play,{name}이(가) 유튜브를 본다.,{name}은(는) 웃으며 기분이 풀렸다.,{name}은(는) 영상을 보다가 멍해졌다.,0.5,HAPPY:+5~+10|STRESS:-4~-1,HAPPY:-3~-1|MOTIVATION:-5~-2
+play,{name}이(가) 산책을 나가려다 포기한다.,{name}은(는) 창밖만 봐도 충분했다.,{name}은(는) 침대에 다시 누웠다.,0.6,HAPPY:+5~+8|STRESS:-6~-3,HAPPY:-3~-1|MOTIVATION:-5~-2
+play,{name}이(가) 라디오를 켠다.,{name}은(는) 음악이 마음을 달래준다.,{name}은(는) 듣다 말고 꺼버렸다.,0.7,HAPPY:+5~+8|STRESS:-5~-3,HAPPY:-3~-1|MOTIVATION:-5~-2
+play,{name}이(가) 느릿하게 창문을 연다.,{name}은(는) 신선한 공기를 마셨다.,{name}은(는) 귀찮아서 바로 닫았다.,0.5,HAPPY:+4~+7|STRESS:-6~-3,HAPPY:-2~-1|MOTIVATION:-4~-2
+play,{name}이(가) 간단한 게임을 한다.,{name}은(는) 약간의 성취감을 느꼈다.,{name}은(는) 바로 지루해졌다.,0.6,HAPPY:+8~+12|MOTIVATION:+5~+10,HAPPY:-3~-1|MOTIVATION:-8~-5
+play,{name}이(가) 그림을 그린다.,{name}은(는) 마음이 편안해졌다.,{name}은(는) 그림을 덮어버렸다.,0.7,HAPPY:+6~+9|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-4~-2
+play,{name}이(가) 방을 어질러본다.,{name}은(는) 괜히 신난다.,{name}은(는) 정리하다가 포기했다.,0.5,HAPPY:+7~+10|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-5~-2
+play,{name}이(가) 음악을 들으며 고개를 끄덕인다.,{name}은(는) 잠시 기분이 좋아졌다.,{name}은(는) 졸렸다.,0.6,HAPPY:+10~+15|STRESS:-6~-3,HAPPY:-3~-1|MOTIVATION:-5~-2
+play,{name}이(가) TV 예능을 본다.,{name}은(는) 웃으며 즐거워했다.,{name}은(는) 리모컨을 떨어뜨리고 안 본다.,0.7,HAPPY:+8~+12|STRESS:-4~-2,HAPPY:-2~-1|MOTIVATION:-4~-2
+,,,,,,
+heal,{name}이(가) 귀찮지만 약을 챙긴다.,{name}은(는) 조금 회복된 기분이다.,{name}은(는) 약 먹다 말고 누웠다.,0.9,HAPPY:+5~+8|STRESS:-8~-3,STRESS:+3~+6|HAPPY:-5~-2
+heal,{name}이(가) 억지로 병원에 간다.,{name}은(는) 진료 후 기운을 차렸다.,{name}은(는) 대기실에서 잠들었다.,0.8,HAPPY:+7~+10|STRESS:-10~-5,STRESS:+3~+6|MOTIVATION:-5~-2
+heal,{name}이(가) 물을 마신다.,{name}은(는) 기분이 한결 낫다.,{name}은(는) 컵을 엎질렀다.,0.7,HAPPY:+5~+8|STRESS:-6~-3,STRESS:+2~+4|MOTIVATION:-5~-2
+heal,{name}이(가) 약을 챙겨먹는다.,{name}은(는) 조금 회복된 느낌이다.,{name}은(는) 약을 흘렸다.,0.8,HAPPY:+5~+10|STRESS:-8~-4,STRESS:+2~+5|MOTIVATION:-4~-2
+heal,{name}이(가) 병원 침대에 눕는다.,{name}은(는) 푹 쉰다.,{name}은(는) 너무 피곤하다.,0.9,HAPPY:+5~+10|STRESS:-5~-2,STRESS:+2~+5|HAPPY:-3~-1
+heal,{name}이(가) 따뜻한 차를 마신다.,{name}은(는) 마음이 조금 안정된다.,{name}은(는) 차를 쏟았다.,0.7,HAPPY:+5~+8|STRESS:-6~-3,HAPPY:-3~-1|STRESS:+3~+6
+heal,{name}이(가) 이불을 덮는다.,{name}은(는) 잠시 안정감을 느낀다.,{name}은(는) 이불 속에서 꼼지락거리다 잠들었다.,0.9,HAPPY:+6~+9|STRESS:-5~-3,HAPPY:-2~-1|MOTIVATION:-5~-2
+heal,{name}이(가) 약을 먹고 눕는다.,{name}은(는) 회복된 느낌이다.,{name}은(는) 먹고 바로 잠들었다.,0.8,HAPPY:+5~+8|STRESS:-6~-3,HAPPY:-2~-1|STRESS:+3~+5
+heal,{name}이(가) 온찜질을 한다.,{name}은(는) 몸이 조금 가벼워졌다.,{name}은(는) 찜질팩이 터졌다.,0.7,HAPPY:+7~+10|STRESS:-8~-4,HAPPY:-3~-1|STRESS:+3~+5
+heal,{name}이(가) 억지로 스트레칭을 한다.,{name}은(는) 뻐근함이 풀렸다.,{name}은(는) 하다 말고 누워버렸다.,0.9,HAPPY:+5~+8|STRESS:-5~-3,HAPPY:-2~-1|MOTIVATION:-5~-2
+,,,,,,
+goOut,{name}이(가) 외출을 준비한다.,{name}은(는) 겨우 밖으로 나왔다.,{name}은(는) 나가기 전에 포기했다.,0.5,HAPPY:+8~+12|STRESS:-5~-2,HAPPY:-3~-1|MOTIVATION:-5~-2
+goOut,{name}이(가) 마트에 간다.,{name}은(는) 장을 보고 돌아왔다.,{name}은(는) 장보다가 귀찮아졌다.,0.6,HAPPY:+5~+8|STRESS:-6~-3,HAPPY:-3~-1|MOTIVATION:-4~-2
+goOut,{name}이(가) 공원을 돈다.,{name}은(는) 신선한 공기를 마셨다.,{name}은(는) 벤치에 누워 있었다.,0.7,HAPPY:+10~+15|STRESS:-8~-4,HAPPY:-2~-1|MOTIVATION:-5~-2
+goOut,{name}이(가) 친구를 만나러 나간다.,{name}은(는) 대화를 나누며 기분이 좋아졌다.,{name}은(는) 약속을 취소했다.,0.5,HAPPY:+8~+12|STRESS:-6~-3|TRUST:+5~+10,HAPPY:-3~-1|TRUST:-5~-2
+goOut,{name}이(가) 카페에 간다.,{name}은(는) 여유로운 시간을 보냈다.,{name}은(는) 자리에서 꾸벅꾸벅 졸았다.,0.6,HAPPY:+7~+10|STRESS:-5~-2,HAPPY:-3~-1|MOTIVATION:-4~-2
+goOut,{name}이(가) 바람을 쐰다.,{name}은(는) 기분이 한결 좋아졌다.,{name}은(는) 피곤해서 바로 돌아왔다.,0.7,HAPPY:+8~+12|STRESS:-6~-3,HAPPY:-3~-1|MOTIVATION:-5~-2
+goOut,{name}이(가) 편의점에 간다.,{name}은(는) 간식을 샀다.,{name}은(는) 아무것도 안 사고 돌아왔다.,0.5,HAPPY:+5~+8|STRESS:-4~-1,HAPPY:-2~-1|MOTIVATION:-3~-1
+goOut,{name}이(가) 마을을 어슬렁거린다.,{name}은(는) 별일 없이 돌아왔다.,{name}은(는) 한 바퀴 돌고 눕는다.,0.6,HAPPY:+6~+9|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-4~-2
+goOut,{name}이(가) 우체국에 간다.,{name}은(는) 볼일을 마치고 귀가했다.,{name}은(는) 우체국 앞에서 발길을 돌렸다.,0.7,HAPPY:+5~+8|STRESS:-4~-1,HAPPY:-3~-1|MOTIVATION:-4~-2
+goOut,{name}이(가) 햇살을 맞는다.,{name}은(는) 마음이 따뜻해졌다.,{name}은(는) 눈이 부셔서 다시 들어갔다.,0.5,HAPPY:+10~+15|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-3~-1
+,,,,,,
+work,{name}이(가) 꾸역꾸역 청소를 시작했다.,{name}이(가) 청소를 끝내긴 했다... 기적이다.,너무 게을러서 청소 시작도 전에 지쳐버렸다.,0.7,HAPPY:+10~+20|STRESS:-10~-3|TRUST:+10~+20,MOTIVATION:-25~-15|STRESS:+8~+12|TRUST:+25~+35
+work,{name}이(가) 설거지를 한다.,{name}은(는) 깨끗해진 싱크대를 보며 뿌듯해했다.,{name}은(는) 접시를 떨어뜨렸다.,0.5,HAPPY:+10~+15|STRESS:-8~-3,HAPPY:-3~-1|MOTIVATION:-8~-4
+work,{name}이(가) 빨래를 넌다.,{name}은(는) 산뜻한 냄새에 기분이 좋아졌다.,{name}은(는) 널다 말고 앉았다.,0.6,HAPPY:+8~+12|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-6~-3
+work,{name}이(가) 서류를 정리한다.,{name}은(는) 일을 마치고 안도의 한숨을 쉰다.,{name}은(는) 정리하다 지쳐버렸다.,0.7,HAPPY:+8~+12|STRESS:-8~-3,HAPPY:-2~-1|MOTIVATION:-5~-2
+work,{name}이(가) 식물을 물 준다.,{name}은(는) 식물이 싱그럽게 빛난다.,{name}은(는) 물을 흘렸다.,0.5,HAPPY:+5~+10|STRESS:-5~-2,HAPPY:-3~-1|MOTIVATION:-5~-2
+work,{name}이(가) 방을 정리한다.,{name}은(는) 방이 조금 깨끗해졌다.,{name}은(는) 하다 말았다.,0.5,HAPPY:+5~+10|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-4~-2
+work,{name}이(가) 컴퓨터를 켠다.,{name}은(는) 필요한 일을 처리했다.,{name}은(는) 멍하니 화면만 봤다.,0.6,HAPPY:+5~+10|STRESS:-6~-3,HAPPY:-2~-1|MOTIVATION:-5~-2
+work,{name}이(가) 메일을 보낸다.,{name}은(는) 깔끔하게 일을 끝냈다.,{name}은(는) 제목만 쓰다 말았다.,0.5,HAPPY:+6~+10|STRESS:-5~-2,HAPPY:-3~-1|MOTIVATION:-4~-2
+work,{name}이(가) 청소기를 밀기 시작했다.,{name}은(는) 끝까지 했다! 기적이다.,{name}은(는) 밀다 말고 멈췄다.,0.6,HAPPY:+10~+15|STRESS:-8~-3,HAPPY:-3~-1|MOTIVATION:-5~-2
+work,{name}이(가) 간단한 집안일을 한다.,{name}은(는) 예상외로 깔끔하게 마쳤다.,{name}은(는) 시작도 안 했다.,0.4,HAPPY:+8~+12|STRESS:-5~-2,HAPPY:-2~-1|MOTIVATION:-5~-2
+,,,,,,
+,,,,,,
+eat,{name}이(가) 상한 음식을 먹었다.,속이 메스꺼워졌다.,심한 복통이 느껴진다.,0.5,HUNGER:-5~-2|STRESS:+5~+10|HAPPY:-10~-5,HUNGER:-10~-5|STRESS:+15~+20|MOTIVATION:-10~-5
+eat,{name}이(가) 식탁을 엎질렀다.,정리하느라 지쳤다.,바닥이 엉망이 되었다.,0.6,HAPPY:-5~-3|STRESS:+5~+8,HAPPY:-10~-5|STRESS:+15~+20|MOTIVATION:-10~-5
+eat,{name}이(가) 먹던 음식을 흘렸다.,대충 닦았다.,바닥이 끈적끈적하다.,0.5,HAPPY:-3~-1|STRESS:+5~+8,HAPPY:-8~-5|STRESS:+12~+15|MOTIVATION:-8~-5
+eat,{name}이(가) 음식 맛이 이상하다고 느꼈다.,입맛이 떨어졌다.,기분까지 상했다.,0.4,HAPPY:-5~-3|MOTIVATION:-3~-1,HAPPY:-10~-6|STRESS:+10~+15|ANGER:+5~+8
+eat,{name}이(가) 너무 급하게 먹었다.,속이 더부룩하다.,체한 것 같다.,0.5,HAPPY:-3~-1|STRESS:+3~+5,HAPPY:-6~-3|STRESS:+10~+15|HUNGER:-5~-3
+,,,,0.6,,
+rest,{name}이(가) 잠을 설쳤다.,머리가 무겁다.,완전히 피곤하다.,0.5,HAPPY:-5~-3|STRESS:+8~+10,HAPPY:-10~-6|STRESS:+15~+20|MOTIVATION:-8~-5
+rest,{name}이(가) 꿈에서 악몽을 꿨다.,기분이 찝찝하다.,하루 종일 불안하다.,0.4,HAPPY:-8~-5|STRESS:+10~+15,HAPPY:-15~-10|STRESS:+20~+25|FEAR:+10~+15
+rest,{name}이(가) 잠들지 못했다.,뒤척이다가 새벽이 되었다.,몸이 더 피곤해졌다.,0.5,HAPPY:-5~-2|STRESS:+8~+12,HAPPY:-10~-6|STRESS:+15~+20|MOTIVATION:-8~-5
+rest,{name}이(가) 이불이 차갑다고 느꼈다.,잠시 몸을 웅크렸다.,몸이 굳어버렸다.,0.5,HAPPY:-3~-1|STRESS:+5~+8,HAPPY:-8~-5|STRESS:+10~+15|FEAR:+5~+8
+rest,{name}이(가) 시끄러운 소리에 깼다.,짜증이 밀려온다.,다시 잠들지 못했다.,0.6,HAPPY:-3~-1|STRESS:+5~+8,HAPPY:-10~-6|STRESS:+12~+18|ANGER:+5~+10
+,,,,,,
+play,{name}이(가) 게임에서 졌다.,조금 속상하다.,기분이 매우 나빠졌다.,0.5,HAPPY:-5~-3|STRESS:+5~+8,HAPPY:-10~-7|ANGER:+10~+15|MOTIVATION:-10~-5
+play,{name}이(가) 친구에게 무시당했다.,조금 서운하다.,마음이 아프다.,0.4,HAPPY:-8~-5|TRUST:-10~-8,HAPPY:-15~-10|TRUST:-20~-15|STRESS:+15~+20
+play,{name}이(가) 게임 도중 연결이 끊겼다.,짜증이 난다.,분노가 폭발했다.,0.4,HAPPY:-6~-4|STRESS:+8~+10,HAPPY:-12~-8|STRESS:+20~+25|ANGER:+10~+15
+play,{name}이(가) 혼자 놀고 있다.,조금 외롭다.,쓸쓸함이 밀려온다.,0.5,HAPPY:-5~-3|TRUST:-3~-1,HAPPY:-10~-6|STRESS:+10~+15|SAD:+8~+12
+play,{name}이(가) 하던 일을 망쳤다.,자신감이 떨어졌다.,더 이상 하고 싶지 않다.,0.6,HAPPY:-6~-4|MOTIVATION:-5~-3,HAPPY:-12~-8|MOTIVATION:-15~-10|STRESS:+10~+15
+,,,,,,
+heal,{name}이(가) 약을 너무 많이 먹었다.,속이 불편하다.,몸이 이상하다.,0.7,HAPPY:-5~-3|STRESS:+8~+10,HAPPY:-10~-6|STRESS:+15~+20|MOTIVATION:-8~-5
+heal,{name}이(가) 병원에서 대기 중이다.,지루하다.,너무 오래 기다렸다.,0.6,HAPPY:-4~-2|STRESS:+5~+8,HAPPY:-8~-5|STRESS:+12~+18|MOTIVATION:-8~-5
+heal,{name}이(가) 치료를 받았지만 아프다.,조금 괜찮아졌다.,통증이 심해졌다.,0.8,HAPPY:-3~-1|STRESS:+5~+8,HAPPY:-10~-6|STRESS:+15~+20|FEAR:+8~+12
+heal,{name}이(가) 약을 엎질렀다.,바닥이 끈적하다.,약을 다시 타야 했다.,0.7,HAPPY:-3~-1|STRESS:+5~+8,HAPPY:-8~-5|STRESS:+10~+15|MOTIVATION:-5~-2
+heal,{name}이(가) 병원비가 비쌌다.,지갑이 텅 비었다.,현실이 버겁게 느껴진다.,0.9,HAPPY:-8~-5|STRESS:+10~+15,HAPPY:-12~-8|STRESS:+20~+25|TRUST:-8~-5
+,,,,,,
+goOut,{name}이(가) 비를 맞았다.,옷이 젖었다.,감기에 걸렸다.,0.5,HAPPY:-5~-3|STRESS:+5~+8,HAPPY:-10~-6|STRESS:+12~+15|FEAR:+5~+8
+goOut,{name}이(가) 교통체증에 갇혔다.,지루하다.,짜증이 밀려온다.,0.4,HAPPY:-5~-3|STRESS:+8~+10,HAPPY:-10~-7|STRESS:+15~+20|ANGER:+10~+15
+goOut,{name}이(가) 지갑을 잃어버렸다.,당황스러워한다.,한동안 멍해진다.,0.4,HAPPY:-10~-6|TRUST:-8~-5,HAPPY:-15~-10|STRESS:+20~+25|MOTIVATION:-10~-5
+goOut,{name}이(가) 길을 잃었다.,불안하다.,겁이 난다.,0.5,HAPPY:-8~-5|STRESS:+8~+12,HAPPY:-15~-10|FEAR:+10~+15|STRESS:+20~+25
+goOut,{name}이(가) 넘어졌다.,무릎이 까졌다.,눈물이 고인다.,0.6,HAPPY:-5~-3|STRESS:+5~+8,HAPPY:-10~-6|STRESS:+12~+15|MOTIVATION:-8~-5
+,,,,,,
+work,{name}이(가) 실수를 저질렀다.,조금 당황했다.,상사에게 혼났다.,0.5,HAPPY:-5~-3|STRESS:+5~+8,HAPPY:-10~-7|STRESS:+15~+20|TRUST:-8~-5
+work,{name}이(가) 일거리가 너무 많다.,지쳐간다.,기절할 것 같다.,0.5,HAPPY:-8~-5|STRESS:+10~+15,HAPPY:-12~-8|STRESS:+20~+25|MOTIVATION:-10~-5
+work,{name}이(가) 일에 실망했다.,열심히 했지만 보람이 없다.,허무하다.,0.5,HAPPY:-8~-5|MOTIVATION:-8~-5,HAPPY:-15~-10|STRESS:+15~+20|SAD:+8~+12
+work,{name}이(가) 동료와 다투었다.,기분이 상했다.,마음이 복잡하다.,0.4,HAPPY:-8~-5|STRESS:+8~+12,HAPPY:-15~-10|STRESS:+20~+25|ANGER:+10~+15
+work,{name}이(가) 업무를 망쳤다.,정신이 멍하다.,자책감이 밀려온다.,0.5,HAPPY:-8~-5|MOTIVATION:-5~-3,HAPPY:-15~-10|STRESS:+20~+25|TRUST:-8~-5
