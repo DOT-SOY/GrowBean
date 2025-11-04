@@ -285,6 +285,7 @@ classDiagram
 
 ### Index 6 out of bounds for length 6
 <img width="444" height="124" alt="Image" src="https://github.com/user-attachments/assets/63bc4ad6-b082-4702-9dfb-2956345ff895" />  
+
 인덱스 범위를 초과한 접근으로 발생한 오류였다.  
 코드 내에서 비교 연산자의 범위 조건이 잘못 설정되어 있었으며, 해당 로직을 수정하여 해결하였다.
 
@@ -292,6 +293,7 @@ classDiagram
 
 ### 에너지 범위 초과 문제
 <img width="268" height="277" alt="Image" src="https://github.com/user-attachments/assets/42d6c226-28c2-4151-9625-b2e64a1f9edb" />  
+
 감정이나 에너지 수치가 100을 초과하거나 0 미만으로 떨어지는 문제가 발생하였다.  
 이는 감정 변화 메서드의 실행 순서 문제였으며,  
 감정 변화를 적용한 후 **0~100 사이로 보정하는 메서드(`clampStats`)**를 호출하도록 수정하여 해결하였다.
