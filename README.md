@@ -35,7 +35,7 @@
 
 ### 1. 클래스 다이어그램
 
-![Image](https://github.com/user-attachments/assets/ecae7ad5-f46b-40b5-b6d7-5fa579f22c8b)
+![Image](https://github.com/user-attachments/assets/2a4f1b23-d774-4134-b335-7be2ab1face9)
 
 - FarmManager는 게임의 전체 흐름을 제어하는 클래스이다.
 - Farmer는 Bean 객체를 포함하며, 행동 명령을 중계한다.
