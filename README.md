@@ -1,11 +1,22 @@
 # GrowBean 프로젝트 구조 및 설계 요약
 
+
+## 👤 제작자 소개
+
+**제작자:** [DOT-SOY](https://github.com/DOT-SOY)
+
+본 프로젝트는 자바 콘솔 기반의 다마고치형 게임을 직접 설계 및 구현한 개인 프로젝트이다.  
+객체 지향 프로그래밍의 핵심 원칙인 **캡슐화, 다형성, 예외 처리 구조**를 실제 코드로 구현하며,  
+성격별로 다른 행동 반응을 보이는 인터랙티브 구조를 통해 학습적·실험적 목적을 함께 달성하고자 하였다.  
+
+자세한 개발 기록 및 추가 프로젝트는 아래 노션 페이지에서 확인할 수 있다.  
+👉 [개발 노션 페이지](https://www.notion.so/28c7d69c762a80bf8001d4c7fc7fac61?source=copy_link)
+
+---
+
 ## 0. 프로젝트 설계 의도
 
-이 프로젝트는 **객체 지향 프로그래밍(OOP)의 핵심 개념인 다형성과 캡슐화**를 실제로 구현해보기 위해 설계되었다.  
-다마고치(Tamagotchi) 형태의 콘솔 게임을 기반으로, **콩(Bean)** 이라는 캐릭터가 각기 다른 성격을 가지고 행동에 따라 다른 반응을 보이는 구조를 목표로 하였다.  
-
-특히 다음과 같은 의도를 가지고 설계되었다.
+프로젝트 설계에서 중점적으로 생각한 항목은 다음과 같다.
 
 1. **성격별 대화 및 반응 차이 구현**  
    - 동일한 행동(`eat`, `rest`, `play` 등)에 대해 캐릭터의 성격에 따라 서로 다른 대사와 결과를 출력하도록 설계하였다.  
@@ -13,7 +24,7 @@
 
 2. **다형성 학습 및 실습**  
    - 추상 클래스(`Beans`)와 인터페이스(`Behavior`)를 기반으로, 다양한 하위 클래스(`KindBean`, `LazyBean`, `SnappyBean`)가 고유의 행동을 구현하도록 하였다.  
-   - 동일한 메서드 호출이 실제 객체의 타입에 따라 다른 결과를 출력하도록 하여 **런타임 다형성(polymorphism)** 을 명확히 체험할 수 있도록 구성하였다.
+   - 동일한 메서드 호출이 실제 객체의 타입에 따라 다른 결과를 출력하도록 하여 런타임 다형성(polymorphism) 을 명확히 체험할 수 있도록 구성하였다.
 
 3. **객체 간 역할 분리 및 책임 분담**  
    - `Farmer`는 행동 명령을 전달하는 컨트롤러로, `Beans`는 상태와 로직을 담당하는 모델로 구분하였다.  
@@ -238,27 +249,77 @@ classDiagram
 ## 2. 플레이 화면
 
 ### 캐릭터 생성
+![Image](https://github.com/user-attachments/assets/08cb4099-e553-4f36-8430-a580dade84d2)  
+플레이어는 농부의 이름을 입력한 뒤, 콩의 이름과 성격을 선택하여 자신만의 캐릭터를 생성할 수 있다.  
+선택한 성격에 따라 콩의 대사, 반응, 감정 변화가 달라진다.
 
-### 성격 고르기
+---
 
 ### 게임 플레이
+![Image](https://github.com/user-attachments/assets/57c7c757-1e26-440e-aa92-b2af8b244dd2)  
+각 콩은 성격에 따라 동일한 행동이라도 다른 결과를 보인다.  
+예를 들어, 착한 콩은 ‘가출’ 이벤트에서 화해를 시도하고, 게으른 콩은 행동할수록 의욕이 감소하며, 까칠한 콩은 쉽게 스트레스를 받는다.  
+
+행동 스크립트는 **CSV 파일로 외부 관리**되며, 성격별로 다른 CSV를 참조한다.  
+이 때, 매번 CSV 파일을 불러오면 성능 저하가 발생할 수 있으므로,  
+최초 한 번만 로드한 뒤 **Map을 이용한 캐시 구조**에 저장하여 재사용하도록 구현하였다.  
+
+---
 
 ### 특수 이벤트
+![Image](https://github.com/user-attachments/assets/48ced750-fac2-4fd9-b04e-f0bdf2a3371d)  
+게임 내 특수 이벤트는 **Custom Exception**을 통해 감지하고 출력한다.  
+이벤트 메시지는 일반 로그와 구분하기 위해 노란색으로 표시된다.  
+예외를 활용한 이벤트 처리 방식은, 향후 새로운 이벤트를 추가할 때의 **확장성과 재사용성**을 높이기 위한 설계적 선택이다.
 
-### 상태 확인
+---
 
-### 저장, 불러오기
+### 저장 및 불러오기
+![Image](https://github.com/user-attachments/assets/d9227d0f-4f71-4448-b625-1b0d65c956e6)  
+플레이한 데이터는 게임 종료 시 자동으로 `save.dat` 파일에 저장된다.  
+프로그램 실행 시, 저장된 세이브 파일이 존재할 경우 자동으로 불러와 이전 상태에서 이어서 진행할 수 있다.
 
+---
 
-## 3. 문제 해결 
+## 3. 문제 해결 (Troubleshooting)
 
-#### Index 6 out of bounds for length 6
+### Index 6 out of bounds for length 6
+<img width="444" height="124" alt="Image" src="https://github.com/user-attachments/assets/63bc4ad6-b082-4702-9dfb-2956345ff895" />  
+인덱스 범위를 초과한 접근으로 발생한 오류였다.  
+코드 내에서 비교 연산자의 범위 조건이 잘못 설정되어 있었으며, 해당 로직을 수정하여 해결하였다.
 
-#### 에너지 범위 초과 문제
+---
 
-#### stream classdesc serialVersionUID = xxxxx, local class serialVersion = ooooo
+### 에너지 범위 초과 문제
+<img width="268" height="277" alt="Image" src="https://github.com/user-attachments/assets/42d6c226-28c2-4151-9625-b2e64a1f9edb" />  
+감정이나 에너지 수치가 100을 초과하거나 0 미만으로 떨어지는 문제가 발생하였다.  
+이는 감정 변화 메서드의 실행 순서 문제였으며,  
+감정 변화를 적용한 후 **0~100 사이로 보정하는 메서드(`clampStats`)**를 호출하도록 수정하여 해결하였다.
 
-#### 이벤트 상태 체크
+---
+
+### stream classdesc serialVersionUID = xxxxx, local class serialVersion = ooooo
+<img width="1289" height="113" alt="Image" src="https://github.com/user-attachments/assets/93eacad2-a389-4243-9cd9-25a738066ef1" />  
+이 오류는 `Beans` 클래스 구조가 변경되었음에도 이전 버전의 구조를 기준으로 직렬화된 `save.dat`을 불러오려 할 때 발생한다.  
+즉, 필드가 추가되거나 이름이 변경되었거나, 상속 구조나 패키지 경로가 달라진 경우  
+기존 세이브 파일의 `serialVersionUID`와 현재 클래스의 UID가 일치하지 않아 복원할 수 없게 된다.  
+
+현재는 미니 프로젝트 단계이므로 `save.dat` 파일을 삭제한 뒤 재실행하는 방식으로 해결하였다.  
+다만, 프로젝트 규모가 커질 경우에는 `Beans` 클래스 내 이벤트 처리 메서드를 별도의 클래스로 분리하고,  
+명시적인 `serialVersionUID`를 지정하여 버전 간 호환성을 유지하는 방식으로 개선할 수 있다.
+
+---
+
+### 이벤트 상태 체크
+<div align="center">
+  <img width="455" height="467" src="https://github.com/user-attachments/assets/0514c3f4-0d33-4818-9eb7-7f5cc7cd6f47" />
+  <img width="477" height="716" src="https://github.com/user-attachments/assets/ee028872-0e59-470a-bb28-9ce55e39a614" />
+</div>
+ 
+이벤트별로 감정 변화나 특수 상태가 올바르게 반영되는지를 검증한 테스트 과정이다.  
+테스트용 `Beans`와 `Farmer` 객체를 생성하여 각 이벤트 발생 시 감정 수치 변화를 확인하였으며,  
+모든 이벤트가 의도한 대로 작동함을 확인하였다.
+
 
 ## 4. 사용된 기술 요약
 
@@ -387,7 +448,7 @@ public void changeEmotion(Emotion emotion, int delta) {
 
 ---
 
-## 6. 프로젝트의 강점 요약
+## 6. 프로젝트 강점 요약
 
 | 항목 | 내용 |
 |------|------|
